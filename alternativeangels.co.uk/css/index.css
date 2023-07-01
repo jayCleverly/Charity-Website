@@ -1,0 +1,282 @@
+
+/* Showcase styling*/
+.showcase{
+    margin-top: 25px;
+    height: 600px;
+}
+
+.showcase h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.showcase p{
+    font-size: 18px;
+    margin: 25px 0;
+    color: var(--primary-color);
+}
+
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 51% 46%;
+    gap: 30px;
+}
+
+.showcase-text a{
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.showcase-img{
+    width: 500px;
+
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+/* Provisions Styling */
+.provide{
+    margin-top: 25px;
+    height: 200px;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.provide .flex{
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.provide h3{
+    color: #FFF;
+    text-align: center;
+    border-bottom: 2px var(--secondary-color) solid;
+}
+
+.provide .card{
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    transition: transform 0.1s ease-in;
+    font-size: 18px;
+    text-align: center;
+}
+
+.provide .card:hover{
+    transform: scale(1.1);
+}
+
+/* Map Styling */
+.location{
+    margin: 60px 0;
+}
+
+.location .container{
+    border: 3px var(--primary-color) solid;
+    width: 100%;
+    height: 100%;
+}
+
+.location h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+iframe{
+    width: 100%;
+}
+
+/* Donations styling */ 
+.donate .grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.donate .card{
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    height: 370px;
+}
+
+.donate ul li::before {
+    content: "\2022";
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+.donate .card h3{
+    color: #FFF;
+}
+
+.donate p, a{
+    font-size: 18px;
+}
+
+
+/* Events Styling */
+.events{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.events .card{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events .card p{
+    font-size: 18px;
+}
+
+/* Responsivness */
+
+/* Laptops */
+@media(max-width: 1024px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* Tablets */
+@media(max-width: 850px){
+    .navbar .logo{
+        margin-left: 10px;
+    }
+
+    .footer{
+        margin-top: 45px;
+    }
+
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        text-align: center;
+        font-size: larger;
+    }
+
+    .footer a{
+        font-size: 20px;
+    }
+
+    .footer li{
+        margin: 10px 0;
+    }
+
+    .grid, 
+    .showcase .grid,
+    .donate .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .showcase{
+        height: auto;
+    }
+
+    .showcase-text{
+        font-size: small;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .showcase-img{
+        width: 98%;
+        height: 96%;
+        justify-self: center;
+        margin: auto;
+    }
+
+    .provide{
+        margin-top: 50px;
+        height:300px
+    }
+
+    .location{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .donate{
+        text-align: center;
+    }
+
+    .donate ul{
+        margin-left: 0px;
+        list-style: none;
+    }
+
+    .donate .grid{
+        gap: 7.5px;
+    }
+
+    .donate .card{
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .events{
+        margin-top: 25px;
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    
+    .events .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+}
+
+
+/* Mobile */
+@media(max-width: 550px){
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .logo{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        margin-left: 0px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .footer .grid{
+        font-size: small;
+    }
+
+    .provide{
+        height:410px
+    }
+}
+
+/* Small Mobile */
+@media(max-width: 364px){
+    .provide{
+        height:520px
+    }
+
+    .footer .grid h1{
+        font-size: 30px;
+    }
+}

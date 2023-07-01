@@ -1,0 +1,138 @@
+
+/* Photos styling */ 
+.photos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.photos .grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photos h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.photos .photos-img{
+    margin-top: 10px;
+    height: auto;
+    font-size: 18px;
+    border: 2px var(--primary-color) solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.photos .photos-img img{
+    margin: auto;
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photos .photos-img p{
+    padding: 10px;
+    margin-top: auto;
+    border-top: 2px var(--primary-color) solid;
+}
+
+
+/* Responsivness */
+
+/* Laptops */
+@media(max-width: 1024px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* Tablets */
+@media(max-width: 850px){
+    .navbar .logo{
+        margin-left: 10px;
+    }
+
+    .footer{
+        margin-top: 45px;
+    }
+
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        text-align: center;
+        font-size: larger;
+    }
+
+    .footer a{
+        font-size: 20px;
+    }
+
+    .footer li{
+        margin: 10px 0;
+    }
+
+    .grid, 
+    .photos .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .photos{
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .photos .photos-img img{
+        width: 400px;
+    }
+
+    .photos h1{
+        margin-bottom: 25px;
+    }
+}
+
+
+/* Mobile */
+@media(max-width: 550px){
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .logo{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        margin-left: 0px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .footer .grid{
+        font-size: small;
+    }
+
+    .photos .photos-img img{
+        width: 280px;
+    }
+}
+
+/* Small Mobile */
+@media(max-width: 364px){
+    .photos .photos-img img{
+        width: 250px;
+    }
+
+    .footer .grid h1{
+        font-size: 30px;
+    }
+}
