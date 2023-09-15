@@ -1,12 +1,19 @@
 
 /* General styling */
 :root{
-    --primary-color: #2a2a2a;
-    --secondary-color: #efcc00;
+    --primary-color: #1f77c2;
+    --secondary-color: #ffd42a;
+}
+
+
+@font-face {
+    font-family: "script-mt-bold-regular";
+    src: url("../images/ScriptMTBold.ttf") format("truetype");
 }
 
 body{
-    background-color: #FFF
+    background-color: #FFF;
+    font-family: Calibri;
 }
 
 *{
@@ -112,11 +119,11 @@ img{
 .navbar{
     background-color: var(--primary-color);
     color: #FFF;
-    height: 60px;
+    height: 70px;
 }
 
 .navbar .logo{
-    width: 280px;
+    width: 85px;
 }
 
 .navbar h1{
@@ -130,9 +137,15 @@ img{
 }
 
 .navbar a{
-    color: var(--secondary-color);
+    color: #FFF;
     font-size: 18px;
     padding: 10px;
+}
+
+.navbar .slogan {
+    margin-left: 580px;
+    margin-right: 0;
+    font-size: large;
 }
 
 .navbar a:hover{
@@ -140,7 +153,7 @@ img{
     border-bottom: 2px #FFF solid;
 }
 
-.navbar .flex{
+.navbar .flex {
     justify-content:left;
 }
 
@@ -149,11 +162,12 @@ img{
     margin-top: 80px;
     padding: 40px;
     background-color: var(--primary-color);
-    border-top: 20px #999999 solid;
+    border-top: 20px #aaccff solid;
 }
 
 .footer .grid h1{
     font-size: 35px;
+    font-family:"script-mt-bold-regular";
     color: #FFF;
 }
 
@@ -164,7 +178,7 @@ img{
 
 .footer .grid a{
     font-size: 18px;
-    color: var(--secondary-color);
+    color: #fff;
 }
 
 .footer a:hover{

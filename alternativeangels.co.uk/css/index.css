@@ -8,28 +8,29 @@
 .showcase h1{
     font-size: 50px;
     font-weight: 400;
-    color: var(--primary-color);
+    color: #000;
+    font-family: "script-mt-bold-regular";
 }
 
 .showcase p{
     font-size: 18px;
     margin: 25px 0;
-    color: var(--primary-color);
+    color: #000;
 }
 
 .showcase .grid{
-    overflow: visible;
-    grid-template-columns: 51% 46%;
+    overflow: hidden;
+    grid-template-columns: 45% 52%;
     gap: 30px;
 }
 
 .showcase-text a{
     font-size: 18px;
-    color: var(--primary-color);
+    color: #000;
 }
 
 .showcase-img{
-    width: 500px;
+    width: 550px;
 
     z-index: 100;
     justify-self: flex-end;
@@ -76,18 +77,23 @@
 }
 
 .location .container{
-    border: 3px var(--primary-color) solid;
+    border: 3px #000 solid;
     width: 100%;
     height: 100%;
 }
 
 .location h3{
+    color: #000;
     text-align: center;
     margin-bottom: 15px;
 }
 
 iframe{
     width: 100%;
+}
+
+.donate h3 {
+    color: #000;
 }
 
 /* Donations styling */ 
@@ -125,29 +131,56 @@ iframe{
     text-align: center;
 }
 
+.events h3 {
+    color: #000;
+}
+
 .events .card{
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
+    border: 3px #000 solid;
 }
 
 .events .card p{
     font-size: 18px;
+    color: #000;
 }
 
 /* Responsivness */
 
 /* Laptops */
-@media(max-width: 1024px){
+@media(max-width: 1100px){
     .container{
         max-width: 1000px;
+        padding: 10px;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .navbar .slogan {
+        margin-left: 420px;
+    }
+
+    .showcase-img{
+        width: 450px;
     }
 }
 
 /* Tablets */
 @media(max-width: 850px){
+
+    .navbar{
+        height: 80px;
+    }
     .navbar .logo{
         margin-left: 10px;
+    }
+
+    .navbar .slogan {
+        margin-left: 180px;
     }
 
     .footer{
@@ -197,7 +230,7 @@ iframe{
 
     .provide{
         margin-top: 50px;
-        height:300px
+        height: 300px;
     }
 
     .location{
@@ -243,12 +276,13 @@ iframe{
 /* Mobile */
 @media(max-width: 550px){
     .navbar{
-        height: 110px;
+        height: 120px;
     }
 
     .navbar .logo{
         margin-left: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
+        width: 70px;
     }
 
     .navbar .flex{
@@ -256,9 +290,14 @@ iframe{
     }
 
     .navbar ul{
-        margin-left: 0px;
-        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
         padding: 10px;
+    }
+
+    .navbar .slogan {
+        display: none;
     }
     
     .footer .grid{
@@ -266,14 +305,21 @@ iframe{
     }
 
     .provide{
-        height:410px
+        height: 300px;
+    }
+}
+
+/* Medium Mobile */
+@media(max-width: 415px){
+    .provide{
+        height: 400px;
     }
 }
 
 /* Small Mobile */
-@media(max-width: 364px){
+@media(max-width: 345px){
     .provide{
-        height:520px
+        height:510px
     }
 
     .footer .grid h1{
